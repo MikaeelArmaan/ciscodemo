@@ -22,7 +22,7 @@ class Router_model extends CI_Model
             $this->db->where("loopback <=", $content['loopback2']);
         }
         if ($content['hostname']) {
-            $this->db->where('hostname', $content['hostname']);
+            $this->db->like('hostname', $content['hostname'], 'both');
         }
         if ($content['mac_address']) {
             $this->db->where('mac_address', $content['mac_address']);

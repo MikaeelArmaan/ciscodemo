@@ -547,7 +547,7 @@ function remove_ssl()
 }
 
 
-function get_pagination($numRows = 0, $per_page = 15, $url = "admin/admin/")
+function get_pagination($numRows = 0, $per_page = 15, $url = "/routers/")
 {
 	$CI = &get_instance();
 	$CI->load->library("pagination");

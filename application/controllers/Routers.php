@@ -27,7 +27,7 @@ class Routers extends CI_Controller
             $arrResult            = $this->router_model->get_routers($per_page, $page_no, $data['scontent']);
         }
 
-        $data['page']                 = get_pagination($numRows, $per_page, "admin/lists");
+        $data['page']                 = get_pagination($numRows, $per_page, "routers/lists");
         $data['arrResult']            = $arrResult;
         // automatically push current page to last record of breadcrumb
         $title                         = 'List Routers';

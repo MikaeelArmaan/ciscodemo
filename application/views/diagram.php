@@ -22,7 +22,7 @@ $values = array(
 	200, 250,
 	250, 200
 );
-imagepolygon($image, $values, 4, $white);
+//imagepolygon($image, $values, 4, $white);
 header('Content-type: image/png');
 
 imagepng($image);
